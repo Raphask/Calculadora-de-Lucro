@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<GridPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller = "calculo.Calculo" 
+           styleClass = "Label" >
+	
+	<columnConstraints>
+	<ColumnConstraints maxWidth ="120" hgrow = "ALWAYS"/>
+	<ColumnConstraints maxWidth ="120" hgrow = "ALWAYS"/>
+	<ColumnConstraints maxWidth ="120" hgrow = "ALWAYS"/>
+	<ColumnConstraints maxWidth ="120" hgrow = "ALWAYS"/>
+	</columnConstraints>
+	 
+	 <rowConstraints>
+	 <RowConstraints minHeight="40.0"/>
+	 <RowConstraints minHeight="40.0"/>
+	 <RowConstraints minHeight="40.0"/>
+	 <RowConstraints minHeight="40.0"/>
+	 <RowConstraints minHeight="40.0"/>
+	 <RowConstraints minHeight="40.0"/>
+	 <RowConstraints minHeight="40.0"/>
+	 <RowConstraints minHeight="40.0"/>
+	 <RowConstraints minHeight="40.0"/>
+	
+	 </rowConstraints>
+	 
+	 
+	 <Label  text="Quantas bebidas você comprou?" GridPane.rowIndex="1" 
+	 GridPane.columnIndex = "1" GridPane.columnSpan = "2" GridPane.halignment="CENTER" StyleClass = "Label-color">
+	   </Label>
+	
+	<TextField fx:id="unidade" GridPane.columnIndex = "1"  GridPane.rowIndex="2" GridPane.columnSpan = "2" ></TextField>
+	
+	 <Label   text="Quanto custou?" GridPane.rowIndex="3" 
+	 GridPane.columnIndex = "1" GridPane.columnSpan = "2"  GridPane.halignment="CENTER" StyleClass = "Label-color">
+	   </Label>
+	   
+	 <TextField fx:id="custo" GridPane.columnIndex = "1"  GridPane.rowIndex="4" GridPane.columnSpan = "2" ></TextField>
+	
+	<Label  text="Por Quanto você vende?" GridPane.rowIndex="5" 
+	 GridPane.columnIndex = "1" GridPane.columnSpan = "2" GridPane.halignment="CENTER"  StyleClass = "Label-color">
+	   </Label>
+	   
+	    <TextField fx:id="unidadeVendida" GridPane.columnIndex = "1"  GridPane.rowIndex="6" GridPane.columnSpan = "2" ></TextField>
+	 
+	 <Button fx:id = "botaoVoltar" text = "voltar" GridPane.columnIndex = "1"  GridPane.rowIndex="7" GridPane.halignment="CENTER"  
+	 onAction = "#voltar"></Button>
+	 <Button text = "Calcule" GridPane.columnIndex = "2"  GridPane.rowIndex="7" GridPane.halignment="CENTER" 
+	 onAction = "#calcularBebida"></Button>
+	 
+	  <Label  text="Você está lucrando" GridPane.rowIndex="8" 
+	 GridPane.columnIndex = "1" GridPane.columnSpan = "2" GridPane.halignment="CENTER"  StyleClass = "Label-color">
+	   </Label>
+	 <Label fx:id = "total"  text="0" GridPane.rowIndex="9" 
+	 GridPane.columnIndex = "1" GridPane.columnSpan = "2" GridPane.halignment="CENTER"  StyleClass = "Label-color">
+	   </Label>
+	</GridPane>
+

@@ -1,0 +1,17 @@
+.root{
+-fx-background-color: linear-gradient(to right, #73c8a9, #373b44);
+}
+.button {
+-fx-background-color: #ffcf44;
+  -fx-border-color: black;
+  -fx-border-radius: 7%;
+  
+  }
+.Label{
+-fx-font-size: 12px;
+-fx-font-family: arial;
+
+}
+.Label-color{
+	-fx-text-fill: white;
+}
